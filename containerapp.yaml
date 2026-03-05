@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: jp-pov-pod
+  name: <pod_name>
 spec:
   containers:
   - name: pov-container
-    image: ghcr.io/johnpease-s1/jp-pov-container:1.0
+    image: ghcr.io/<user_name>/<container_name>:<tag>
   imagePullSecrets:
-  - name: ghcr-pull-secret
+  - name: <pull-secret>
